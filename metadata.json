@@ -2,5 +2,7 @@
   "name": "go.arch | Luxury Architecture & Design Studio",
   "description": "Landing page moderna em Dark Mode para um escritório de arquitetura e design de luxo, inspirada no layout minimalista go.arch com linhas de grade estruturadas e acabamento refinado.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

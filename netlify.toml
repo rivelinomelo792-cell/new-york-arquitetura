@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 # Regra de roteamento SPA para o React Router / Navegação client-side
 [[redirects]]
