@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-gold: #c5a880;
+  --color-gold-light: #dfcaa8;
+  --color-gold-dark: #8c734b;
+  --color-canvas: #171717;
+  --color-surface: #202020;
+}
+
+/* Custom architectural utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+/* Gold metallic text effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e1b5 0%, #c5a880 40%, #8c6e43 70%, #d8be99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Architectural number 12 embossed metallic texture */
+.num-gold-metallic {
+  background: linear-gradient(145deg, #eedbc1 0%, #c5a880 35%, #5e4624 65%, #c5a880 85%, #f2e3cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
